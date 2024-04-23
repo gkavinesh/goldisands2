@@ -1,0 +1,269 @@
+/*
+Theme Name: HTML Prototypes v1
+Theme URI: 
+Author: EME UI Development Team
+Author URI: 
+Description: 
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: 
+Tags: 
+Text Domain: htmlprototype
+*/
+
+
+/*---------------------------- [table of contents] ------------------
+ 1. variables
+ 2. mixin
+ 3. typography
+ 3. links
+ 4. layout
+    4.1 tables
+    4.2 forms / modals
+ 5. site styles
+ 6  image styles
+ 7. media queries
+ 8. base site notifications
+ 9. owl carousel
+10. fancybox 3
+
+
+-------------------------------------------------------------------*/
+@import "../variables-corp";
+@import "../style-header";//1st fold styles
+
+//libraries
+
+
+
+
+/* 5. site styles 
+*  --------------  write yout site related styles here ------------ */
+
+//custom styles
+.section-title-wrapper {
+    .top-title {
+        //display & box
+        margin: 0;
+
+        //color
+        color: $black;
+
+        //text
+        font-family: $secondary-font;
+        font-size: 26px;
+        line-height: 1.2;
+
+        @media only screen and (min-width: 1200px) {
+            font-size: 35px;
+        }
+    }
+
+    .main-title {
+        //position
+        position: relative;
+        //display & box
+        margin: 0;
+        overflow: hidden;
+
+        //other
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        //color
+        // color: #4f8b96;
+        //text
+        // font-family: $secondary-font;
+        // font-size: 70px;
+        // line-height: 1.4;
+
+        // @media only screen and (min-width: 992px) {
+        //     font-size: 180px;
+        // }
+
+        .bg-flower {
+            position: absolute;
+            left: 206px;
+            top: -48px;
+
+            //Display & Box Model
+            display: none;
+            width: 140px;
+            height: 300px;
+
+            @media only screen and (min-width: 768px) {
+                display: block;
+            }
+
+            .flower-1 {
+                width: 145px;
+            }
+        }
+
+        .bg-leaf {
+            position: absolute;
+
+            //Display & Box Model
+            display: none;
+            right: -25px;
+            top: 28px;
+
+            @media only screen and (min-width: 768px) {
+                display: block;
+            }
+
+            .flowerleaf-1 {
+                width: 250px;
+            }
+        }
+
+        .title-text {
+            position: relative;
+            z-index: 100;
+
+            svg {
+                width: 100%;
+                fill: $white;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-bottom: 0px;
+                height: auto;
+                -webkit-backface-visibility: hidden; /* Safari */
+                backface-visibility: hidden;
+            }
+
+            img{
+                -webkit-backface-visibility: hidden; /* Safari */
+                backface-visibility: hidden;
+            }
+        }
+    }
+
+    .bottom-title {
+        //display & box
+        margin: 8px 0 0 0;
+
+        //color
+        color: #cfcfcf;
+
+        //text
+        font-family: $tertiary-font;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 6px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+}
+
+//common image block styles
+.section-home-image-block {
+    position: relative;
+
+    .cloud-svg {
+        fill: white;
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
+    .top-overlay-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+
+        .cloud-svg {
+            vertical-align: top;
+        }
+    }
+
+    .bottom-overlay-block {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+
+        .cloud-svg {
+            vertical-align: bottom;
+        }
+    }
+
+    .image-wrapper {
+        //box
+        width: 100%;
+        height: 480px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media only screen and (min-width: 768px) {
+            height: 500px;
+        }
+        @media only screen and (min-width: 992px) {
+            height: 640px;
+        }
+        @media only screen and (min-width: 1200px) {
+            height: 880px;
+        }
+        @media only screen and (min-width: 1600px) {
+            height: 1040px;
+        }
+    }
+}
+
+
+
+//components
+@import "../components/homepage/section-home-intro-type-1";
+@import "../components/homepage/section-home-why-book";
+@import "../components/homepage/section-home-offers";
+@import "../components/homepage/section-home-hotels";
+@import "../components/homepage/section-home-explore";
+@import "../components/homepage/section-home-locations";
+@import "../components/homepage/section-home-review";
+@import "../components/homepage/section-home-faq";
+@import "../components/footer/footer";
+
+
+/* --------------  write yout site related styles here ------------ */
+
+
+
+
+/* 7. media queries */
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1600px) {}
+@media only screen and (min-width: 1900px) {}
+
+
+
+
+
+

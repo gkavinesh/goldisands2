@@ -1,0 +1,346 @@
+.ibe-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: $white;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: 0.3s all;
+
+    @media only screen and (min-width: 1200px) {
+        height: auto;
+        width: 375px;
+        bottom: auto;
+        left: auto;
+        padding: 36px;
+        overflow: inherit;
+        border: 1px solid #b1b1b1;
+        border-radius: 10px;
+        border-top-right-radius: 0;
+        top: 50px;
+        right: 30px;
+    }
+
+    .ibe-section {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        align-self: center;
+        padding: 20px;
+
+        @media only screen and (min-width: 768px) {
+            max-width: 360px;
+        }
+        @media only screen and (min-width: 1200px) {
+            padding: 0;
+        }
+
+        .feather-menu-1 {
+            position: absolute;
+            top: 130px;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 83px;
+            height: 425px;
+            z-index: -1;
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+        .feather-menu-2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 75px;
+            height: 459px;
+            z-index: -1;
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        .close-icon-wrapper {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+
+            a {
+                display: block;
+                line-height: 0;
+
+                svg {
+                    width: 15px;
+                    height: 15px;
+                    fill: #9f9f9f;
+                }
+            }
+        }
+
+        .ibe-widget-title {
+            font-family: $secondary-font;
+            font-size: 26px;
+            color: $black;
+            line-height: 1;
+        }
+        .comp-ibe-widget {
+            margin-top: 40px;
+
+            .column {
+                width: 100%;
+                margin-top: 20px;
+
+                &:nth-of-type(1) {
+                    margin-top: 0;
+                }
+            }
+
+            .dates-row {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                button {
+                    color: $black;
+                    height: 73px;
+                }
+
+                .checkin,
+                .checkout {
+                    flex-basis: 50%;
+                    max-width: 50%;
+                    position: relative;
+                }
+
+                .date-display-box {
+                    position: absolute;
+                    top: 0;
+                    pointer-events: none;
+
+                    .date-text {
+                        font-family: $secondary-font;
+                        font-size: 24px;
+                        color: #252525;
+                        text-transform: uppercase;
+                    }
+                    .other-text {
+                        font-family: $tertiary-font;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #252525;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .checkout {
+                    .date-display-box {
+                        right: 0;
+                    }
+                }
+            }
+
+            .booking-date,
+            .code {
+                text-align: left;
+            }
+
+            .booking-datepicker {
+                display: block;
+                position: relative;
+                width: 100%;
+                left: 0;
+                right: 0;
+                top: -10px;
+                -webkit-transition: opacity 87.5ms, visibility 87.5ms, -webkit-transform 87.5ms;
+                transition: opacity 87.5ms, visibility 87.5ms, -webkit-transform 87.5ms;
+                transition: transform 87.5ms, opacity 87.5ms, visibility 87.5ms;
+                transition: transform 87.5ms, opacity 87.5ms, visibility 87.5ms, -webkit-transform 87.5ms;
+                background: $black;
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 4px 13px rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+            }
+
+            form {
+                label {
+                    display: none;
+                }
+                .buttons {
+                    width: 100%;
+                    display: block;
+                    margin-top: 30px;
+                    text-align: right;
+
+                    button {
+                        display: inline-block;
+                        margin: 0 auto;
+                        white-space: normal;
+                        font-size: 20px;
+                        line-height: 1.4;
+                        text-align: center;
+                        min-width: 0;
+                        height: auto;
+                        color: #fff;
+                        background-color: #bd9f65;
+                        border: 2px solid #bd9f65;
+                        border-radius: 0;
+                        padding: 7px 30px 6px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+
+                        &:hover {
+                            background-color: $black;
+                            border: 2px solid $black;
+                            color: $white;
+                        }
+                    }
+                }
+
+                .form-control {
+                    background-color: transparent;
+                    border: none !important;
+                    border-bottom: 1px solid #9a9a9a !important;
+                    color: #252525;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-family: $tertiary-font;
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding-bottom: 13px;
+                    border-radius: 0;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                    
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: #252525;
+                    }
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: #252525;
+                    }
+                    &:-ms-input-placeholder { /* IE 10+ */
+                        color: #252525;
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: #252525;
+                    }
+                }
+
+                select {
+                    background: url(images/dropdown.svg) no-repeat right center !important;
+                    padding-left: 0 !important;
+                    padding-right: 0 !important;
+                    appearance: none;
+                    option {
+                        color: black;
+                    }
+                }
+
+                .flatpickr-monthDropdown-months {
+                    padding: 6px 30px !important;
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+
+                .numInput.cur-year {
+                    font-size: 16px;
+                    line-height: 18px;
+                }
+
+                .dropdown-container{
+                    .select2.select2-container.select2-container--default{
+                        width: 100% !important;
+
+                        .select2-selection{
+                            background-color: transparent !important;
+                            border: none;
+                            border-bottom: 1px solid #9a9a9a !important;
+                            outline: none;
+                            border-radius: 0;
+                            height: 40px;
+
+                            .select2-selection__rendered{
+                                line-height: 28px;
+                                padding-left: 0;
+                                text-transform: uppercase;
+                                font-family: $tertiary-font;
+                                font-weight: 600;
+                                font-size: 16px;
+                                color: #252525;
+                            }
+
+                            .select2-selection__arrow{
+                                top: -1px;
+                            }
+                            .select2-selection__arrow b{
+                                // border-width: 8px 6px 0 6px;
+                                background-image: url('../../images/dropdown-icon2.png');
+                                height: 6px;
+                                width: 9px;
+                                border: none;
+                                background-repeat: no-repeat;
+                            }
+                        }
+
+                        &.select2-container--open{
+                            .select2-selection{
+                                .select2-selection__arrow b{
+                                    // border-width: 0 6px 8px 6px;
+                                    background-image: url('../../images/dropdown-icon2.png');
+                                    height: 6px;
+                                    width: 9px;
+                                    border: none;
+                                    background-repeat: no-repeat;
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //vertical booking
+            &#vertical-booking {
+                max-width: 320px;
+
+                .form-parts {
+                    & > .inputs-wrapper {
+                        display: -webkit-box;
+                        display: flex;
+                        flex-wrap: wrap;
+                        -webkit-box-pack: justify;
+                        justify-content: space-between;
+                        padding: 2em 1em;
+                        background: #e7e8e8;
+                        position: relative;
+                    }
+                }
+
+                .column {
+                    width: calc(50% - 1.25em / 2);
+                    margin-bottom: 1.25em;
+
+                    &.property,
+                    &.checkin-checkout-wrapper,
+                    &.promo-code {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//flatpicker override
+.booking-datepicker .flatpickr-calendar.open {
+    top: 15px !important;
+}

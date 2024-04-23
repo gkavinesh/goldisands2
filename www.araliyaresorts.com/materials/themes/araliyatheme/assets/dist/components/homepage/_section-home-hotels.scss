@@ -1,0 +1,421 @@
+.home-section-group-4{
+
+}
+
+.section-home-hotels{
+    margin-top: 55px;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 768px) {
+        padding-bottom: 42px;
+    }
+    @media only screen and (min-width: 992px) {
+        margin-top: 80px;
+    }
+    @media only screen and (min-width: 1200px) {
+        margin-top: 100px;
+        padding-bottom: 50px;
+        padding-left: 188px;
+    }
+
+    .bottom-bg-pattern{
+        display: none;
+        width: 515px;
+        height: 205px;
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.1;
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+        }
+        @media only screen and (min-width: 992px) {
+            width: 630px;
+            height: 555px;
+        }
+
+        @media only screen and (min-width: 1600px) {
+            width: 1000px;
+            height: 145px;
+        }
+    }
+
+    .inner-wrapper{
+
+        .container.page-container{
+            @media only screen and (min-width: 992px) {
+                width: 100%;
+                max-width: 740px;
+            }
+            @media only screen and (min-width: 1200px) {
+                width: 100%;
+                max-width: 890px;
+                padding: 0;
+            }
+        }
+
+        .section-title-wrapper{
+            display: inline-block;
+            position: relative;
+
+            .title-hr-line {
+                display: none;
+                width: 140px;
+                height: 1px;
+                background-color: #3a4e5b;
+                position: absolute;
+                left: -195px;
+                top: 65px;
+
+                @media only screen and (min-width: 992px) {
+                    display: block;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    top: 153px;
+                    left: -200px;
+                }
+
+                @media only screen and (min-width: 1600px) {
+                    top: 156px;
+                    left: -195px;
+                }
+            }
+
+
+            .top-title{
+                @media only screen and (min-width: 768px) {
+                    position: absolute;
+                    z-index: 990;
+                    left: 48px;
+                    top: -13px;
+                }
+                @media only screen and (min-width: 1200px) {
+                    left: 580px;
+                    top: -9px;
+                }
+            }
+            .main-title{
+                width: 100%;
+                max-width: 210px;
+                margin-top: 15px;
+
+                @media only screen and (min-width: 768px) {
+                    max-width: 534px;
+                    margin-top: 0;
+                }
+                @media only screen and (min-width: 1200px) {
+                    max-width: 890px;
+                }
+
+                .bg-flower{
+                    left: 52px;
+                    top: 8px;
+                }
+
+                .bg-leaf{
+                    right: 49px;
+                    top: 3px;
+                }
+            }
+
+            .main-title .title-text{
+                svg{
+                    max-width: 535px;
+
+                    @media only screen and (min-width: 1200px) {
+                        max-width: 890px;
+                    }
+                    @media only screen and (min-width: 1600px) {
+                        max-width: 900px;
+                    }
+                }
+            }
+
+            .bottom-title{
+                margin: 15px 0 0 0;
+
+                @media only screen and (min-width: 768px) {
+                    margin-top: 13px;
+                }
+                @media only screen and (min-width: 992px) {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        .section-main-content{
+            margin-top: 12px;
+
+            @media only screen and (min-width: 768px) {
+                margin-top: 45px;
+            }
+            @media only screen and (min-width: 992px) {
+                margin-top: 50px;
+            }
+
+            .description{
+                @media only screen and (min-width: 1200px) {
+                    max-width: 625px;
+                }
+            }
+        }
+
+
+    }
+}
+
+.home-image-block-4{
+    margin-top: 35px;
+}
+
+
+.section-home-our-hotels-carousel{
+    position: relative;
+
+    .home-image-block-1{
+        margin-top: 25px;
+    }
+
+    //dropdown
+    .hotel-list-dropdown-wrapper{
+        display: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 50px;
+
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+
+        select{
+            font-size: 14px;
+        }
+
+        .dropdown-container{
+            .select2.select2-container.select2-container--default{
+                width: 100% !important;
+                max-width: 320px;
+
+                .select2-selection{
+                    background-color: transparent !important;
+                    // border: none;
+                    border: 1px solid #eeeeee;
+                    outline: none;
+                    border-radius: 0;
+                    height: 40px;
+
+                    .select2-selection__rendered{
+                        line-height: 40px;
+                        padding-left: 15px;
+                        font-family: $tertiary-font;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $black;
+                    }
+
+                    .select2-selection__arrow{
+                        top: -1px;
+                        height: 40px;
+                        right: 10px;
+                    }
+                    .select2-selection__arrow b{
+                        // border-width: 8px 6px 0 6px;
+                        background-image: url('../../images/dropdown-icon2.png');
+                        height: 6px;
+                        width: 9px;
+                        border: none;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                &.select2-container--open{
+                    .select2-selection{
+                        .select2-selection__arrow b{
+                            // border-width: 0 6px 8px 6px;
+
+                            background-image: url('../../images/dropdown-icon2.png');
+                            height: 6px;
+                            width: 9px;
+                            border: none;
+                            background-repeat: no-repeat;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //hotel list fixed
+    .hotel-list-fixed{
+        display: none;
+
+        @media only screen and (min-width: 768px) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 35px;
+
+            display: block;
+            max-width: 175px;
+
+            z-index: 10;
+        }
+
+        @media only screen and (min-width: 992px) {
+            left: 44px;
+        }
+        @media only screen and (min-width: 1200px) {
+            left: 64px;
+        }
+
+        ul{
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style: none;
+
+            li{
+                padding-left: 0;
+                margin-top: 15px;
+
+
+                @media only screen and (min-width: 992px) {
+                    margin-top: 22px;
+                }
+
+                &:nth-of-type(1){
+                    margin-top: 0;
+                }
+
+                a{
+                    position: relative;
+
+                    display: block;
+
+                    color: $white;
+
+                    font-family: $tertiary-font;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding-bottom: 20px;
+
+                    @media only screen and (min-width: 992px) {
+                        font-size: 16px;
+                        padding-bottom: 24px;
+                    }
+
+                    &:before{
+                        content: "";
+                        width: 30px;
+                        height: 1px;
+                        background-color: $white;
+                        position: absolute;
+                        bottom: 2px;
+                        left: 0;
+                        transition: 0.3s all;
+                    }
+                }
+
+                &.active{
+
+                    a{
+                        &:before{
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //carousel
+    .section-home-hotels-carousel{
+        .item{
+
+            .mobile-image-wrapper{
+                display: block;
+
+                @media only screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .image-wrapper{
+                display: none;
+
+                @media only screen and (min-width: 768px) {
+                    display: block;
+                    height: 500px;
+                }
+                @media only screen and (min-width: 1024px) {
+                    height: 640px;
+                }
+                @media only screen and (min-width: 1200px) {
+                    height: 880px;
+                }
+                @media only screen and (min-width: 1600px) {
+                    height: 1020px;
+                }
+            }
+
+            .hotel-name-text{
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+                display: block;
+                color: $white;
+                font-family: $tertiary-font;
+                font-size: 16px;
+                font-weight: 600;
+                padding-bottom: 20px;
+
+                @media only screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+        .owl-dots{
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 990;
+            bottom: 45px;
+            margin: auto;
+            // display: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .owl-dot{
+                &:hover,
+                &:focus{
+                    outline: none;
+                }
+             
+                span{
+                    width: 11px;
+                    height: 11px;
+                    // border: 1px solid #ffffff;
+                    margin: 0 2px;
+                    background: #ffffff;
+                    border-radius: 50%;
+                    display: block;
+                    border: 2px solid #000000;
+                }
+
+                &.active{
+                    span{
+                        background: #000000;
+                    }
+                }
+            }
+        }
+    }
+}

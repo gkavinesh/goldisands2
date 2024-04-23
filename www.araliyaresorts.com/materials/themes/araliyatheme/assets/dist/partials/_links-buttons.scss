@@ -1,0 +1,217 @@
+a {
+    color: $black;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    // font-family: $buttons-font;
+
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: none;
+    }
+
+    &.line-link{
+        padding-bottom: 2px;
+        border-bottom: 2px solid $black;
+
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: none;
+            border-bottom: 2px solid $link-hover-color;
+        }
+    }
+
+    &.thick-line-link{
+        padding-bottom: 4px;
+        position: relative;
+
+        &:before{
+            content: " ";
+            position: absolute;
+            border-bottom: 4px solid $black;
+            width: calc(100% - 5px);
+            bottom: -4px;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: none;
+            // border-bottom: 4px solid $link-hover-color;
+
+            &:before{
+                border-bottom: 4px solid  $link-hover-color;
+            }
+        }
+    }
+
+    &.thick-line-link-type-2{
+        display: inline-block;
+        position: relative;
+        padding-bottom: 7px;
+        color: $black;
+        font-family: $buttons-font;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 24px;
+        letter-spacing: 5px;
+        margin-right: -5px;
+        transition: all 0.3s;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            border-bottom: 3px solid $black;
+            width: calc(100% - 5px);
+            bottom: 0;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: none;
+            // border-bottom: 4px solid $link-hover-color;
+
+            &:before {
+                border-bottom: 3px solid $link-hover-color;
+            }
+        }
+    }
+
+    &.thick-line-around-space{
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 7px; // bcz of letter spacing
+        padding-bottom: 4px;
+        border-bottom: 3px solid $black;
+
+        color: $black;
+
+        font-family: $buttons-font;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 24px;
+        letter-spacing: 5px;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: none;
+            border-bottom: 3px solid $link-hover-color;
+        }
+    }
+
+    &.thick-underline {
+        display: inline-block;
+        padding-bottom: 4px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        margin-right: -5px;
+        text-transform: uppercase;
+        font-family: $buttons-font;
+
+        &:before {
+            content: " ";
+            position: absolute;
+            border-bottom: 3px solid #000000;
+            width: calc(100% - 5px);
+            bottom: -4px;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+        &:hover {
+            color: $link-hover-color;
+            text-decoration: none;
+            &:before {
+                border-bottom: 3px solid $link-hover-color;
+            }
+        }
+    }
+}
+
+.white-btn{
+    display: inline-block;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: $buttons-font;
+    padding: 11px 20px;
+    padding-top: 15px;
+    text-transform: uppercase; 
+    color: $black;
+    background-color:$white;
+    margin-left: auto;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.ghost-btn {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: $buttons-font;
+    padding: 9px 15px;
+    border: 2px solid $black;
+    border-radius: 0;
+    color: $black;
+    margin-left: auto;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    
+    &:hover {
+        background-color: $link-hover-color;
+        color: $white;
+        border-color: $link-hover-color;
+    }
+}
+
+.book-now-btn-type-2{
+    color: $black;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    border: 2px solid $black;
+    color: $black;
+    border-radius: 0;
+    padding: 7px 18px 5px;
+
+    &:hover {
+        background-color: $link-hover-color;
+        color: $white;
+        border-color: $link-hover-color;
+    }
+
+    &:focus{
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+.btn{
+    font-family: $buttons-font;
+}

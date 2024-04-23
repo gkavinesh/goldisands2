@@ -1,0 +1,203 @@
+.home-section-group-5 {
+}
+
+.section-home-explore {
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 768px) {
+        padding-top: 70px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        padding-top: 85px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        padding-top: 105px;
+        padding-left: 15px;
+    }
+
+    @media only screen and (min-width: 1600px) {
+        padding-top: 150px;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 197px;
+    }
+
+    .bottom-bg-pattern {
+        width: 100%;
+        height: 505px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        z-index: -1;
+        display: block;
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+            width: 520px;
+            height: 380px;
+        }
+
+        @media only screen and (min-width: 992px) {
+            width: 630px;
+            height: 555px;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            top: 0;
+            bottom: auto;
+        }
+
+        @media only screen and (min-width: 1600px) {
+            width: 1000px;
+            height: 145px;
+        }
+    }
+
+    .inner-wrapper {
+        .container.page-container {
+            @media only screen and (min-width: 768px) {
+                width: 100%;
+                max-width: 665px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                width: 100%;
+                max-width: 880px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                width: 100%;
+                max-width: 1150px;
+                padding: 0;
+            }
+        }
+
+        .section-title-wrapper {
+            display: inline-block;
+            position: relative;
+
+            .title-hr-line {
+                display: none;
+                width: 140px;
+                height: 1px;
+                background-color: #3a4e5b;
+                position: absolute;
+                right: -160px;
+                top: 95px;
+
+                @media only screen and (min-width: 992px) {
+                    display: block;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    top: 118px;
+                    right: -185px;
+                }
+
+                @media only screen and (min-width: 1600px) {
+                    top: 117px;
+                }
+            }
+
+            .top-title {
+                @media only screen and (min-width: 768px) {
+                    position: absolute;
+                    // z-index: 1000;
+                    z-index: 990;
+                    left: 322px;
+                    top: -18px;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    left: 358px;
+                    top: -7px;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    left: 695px;
+                    top: -33px;
+                }
+            }
+
+            .main-title {
+                width: 100%;
+                max-width: 276px;
+                margin-top: 15px;
+
+                @media only screen and (min-width: 768px) {
+                    max-width: 575px;
+                    margin-top: 0;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    max-width: 830px;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    max-width: 1150px;
+                }
+
+                .bg-flower{
+                    left: 74px;
+                    top: -55px;
+                }
+
+                .bg-leaf{
+                    right: 143px;
+                    top: 28px;
+                }
+            }
+
+            .main-title .title-text {
+                svg {
+                    max-width: 575px;
+
+                    @media only screen and (min-width: 990px) {
+                        max-width: 830px;
+                    }
+
+                    @media only screen and (min-width: 1200px) {
+                        max-width: 1150px;
+                    }
+                }
+            }
+        }
+
+        .section-main-content {
+            margin-top: 22px;
+
+            @media only screen and (min-width: 768px) {
+                margin-top: 40px;
+            }
+
+            .description{
+                @media only screen and (min-width: 1200px) {
+                    max-width: 685px;
+                }
+            }
+        }
+    }
+}
+
+.section-home-explore-image-block {
+    margin-top: 50px;
+
+    @media only screen and (min-width: 768px) {
+        margin-top: 70px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin-top: 60px;
+    }
+
+    @media only screen and (min-width: 1600px) {
+        margin-top: 52px;
+    }
+}

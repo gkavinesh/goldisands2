@@ -1,0 +1,297 @@
+.section-home-review {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+
+    @media only screen and (min-width: 992px) {
+        margin-top: 83px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        margin-top: 88px;
+    }
+    @media only screen and (min-width: 1350px) {
+        padding-left: 93px;
+    }
+
+    @media only screen and (min-width: 1600px) {
+        margin-top: 115px;
+        padding-left: 170px;
+    }
+
+    .bottom-bg-pattern {
+        width: 515px;
+        height: 720px;
+        position: absolute;
+        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        z-index: -1;
+        opacity: 0.1;
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+        }
+
+        @media only screen and (min-width: 992px) {
+            display: none;
+            width: 630px;
+            height: 555px;
+        }
+
+        @media only screen and (min-width: 1600px) {
+            width: 1000px;
+            height: 145px;
+        }
+    }
+
+    .inner-wrapper {
+        .container.page-container {
+            @media only screen and (min-width: 768px) {
+                width: 100%;
+                max-width: 615px;
+            }
+
+            @media only screen and (min-width: 992px) {
+                width: 100%;
+                max-width: 895px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                width: 100%;
+                max-width: 1105px;
+                padding: 0;
+            }
+
+            @media only screen and (min-width: 1600px) {
+                width: 100%;
+                max-width: 1180px;
+            }
+        }
+
+        .section-title-wrapper-container{
+            @media only screen and (min-width: 1200px) {
+                text-align: right;
+            }
+        }
+
+        .section-title-wrapper {
+            display: inline-block;
+            position: relative;
+
+            @media only screen and (min-width: 1200px) {
+                text-align: left;
+            }
+
+            .title-hr-line {
+                display: none;
+                width: 140px;
+                height: 1px;
+                background-color: #3a4e5b;
+                position: absolute;
+                left: -160px;
+                top: 61px;
+
+                @media only screen and (min-width: 992px) {
+                    display: block;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    top: 118px;
+                    left: -190px;
+                }
+
+                @media only screen and (min-width: 1600px) {
+                    top: 148px;
+                    left: -195px;
+                }
+            }
+
+            .top-title {
+                @media only screen and (min-width: 768px) {
+                    position: absolute;
+                    z-index: 990;
+                    left: 198px;
+                    top: -8px;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    left: 388px;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    left: 384px;
+                    top: -9px;
+                }
+
+                @media only screen and (min-width: 1600px) {
+                    left: 440px;
+                }
+            }
+
+            .main-title {
+                width: 100%;
+                max-width: 237px;
+                margin-top: 15px;
+
+                @media only screen and (min-width: 768px) {
+                    max-width: 590px;
+                    margin-top: 0;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    max-width: 710px;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    max-width: 1024px;
+                }
+
+                @media only screen and (min-width: 1600px) {
+                    max-width: 1182px;
+                }
+
+                .bg-flower{
+                    left: 15px;
+                    top: 4px;
+                }
+                .bg-leaf{
+                    right: 68px;
+                    top: 57px;
+                }
+            }
+
+            .main-title .title-text {
+                svg {
+                    max-width: 595px;
+
+                    @media only screen and (min-width: 990px) {
+                        max-width: 715px;
+                    }
+
+                    @media only screen and (min-width: 1200px) {
+                        max-width: 1025px;
+                    }
+
+                    @media only screen and (min-width: 1600px) {
+                        max-width: 1180px;
+                    }
+                }
+            }
+
+            .bottom-title {
+                margin-top: 12px;
+                @media only screen and (min-width: 768px) {
+                    margin-top: 13px;
+                }
+
+                @media only screen and (min-width: 992px) {
+                    margin-top: 15px;
+                    margin-left: 168px;
+                }
+
+                @media only screen and (min-width: 1200px) {
+                    margin-left: 164px;
+                }
+
+                @media only screen and (min-width: 1600px) {
+                    margin-left: 171px;
+                }
+            }
+        }
+
+        .section-main-content {
+        }
+
+        .reviews-container {
+            margin-top: 20px;
+
+            @media only screen and (min-width: 768px) {
+                margin-top: 65px;
+            }
+
+            @media only screen and (min-width: 1200px) {
+                margin-top: 75px;
+            }
+
+            .reviews-inner-container {
+                .item {
+                    @media only screen and (min-width: 768px) {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+
+                    @media only screen and (min-width: 1200px) {
+                        width: 100%;
+                        max-width: 865px;
+                    }
+
+                    .image-wrapper {
+                        @media only screen and (min-width: 768px) {
+                            flex-basis: 210px;
+                            max-width: 210px;
+                        }
+
+                        img {
+                            width: 100%;
+                            max-width: 105px;
+                            border-radius: 50%;
+                            height: auto;
+
+                            @media only screen and (min-width: 768px) {
+                                max-width: 210px;
+                            }
+                        }
+                    }
+
+                    .text-wrapper {
+                        margin-top: 20px;
+
+                        @media only screen and (min-width: 768px) {
+                            flex-basis: calc(100% - 210px);
+                            max-width: calc(100% - 210px);
+                            padding-left: 50px;
+                            margin-top: 25px;
+                        }
+
+                        .review-text {
+                            color: #1f1f1f;
+
+                            font-size: 30px;
+                            line-height: 1.2;
+                        }
+
+                        .review-owner {
+                            margin-top: 16px;
+                            font-weight: 500;
+                            color: #cfcfcf;
+
+                            font-family: $tertiary-font;
+                            font-size: 16px;
+                            text-transform: uppercase;
+                        }
+                    }
+
+                    & + .item {
+                        margin-top: 50px;
+
+                        @media only screen and (min-width: 768px) {
+                            margin-top: 15px;
+                        }
+
+                        @media only screen and (min-width: 992px) {
+                            margin-top: 60px;
+                        }
+
+                        @media only screen and (min-width: 1200px) {
+                            margin-top: 70px;
+                            margin-left: 210px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

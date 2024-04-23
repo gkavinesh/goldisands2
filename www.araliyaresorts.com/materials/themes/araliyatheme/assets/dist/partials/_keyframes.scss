@@ -1,0 +1,149 @@
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+
+// @-webkit-keyframes run {
+//     0% {
+//         right: -270px;
+//         // transform: translateX(0);
+//     }
+
+//     100% {
+//         right: 100%;
+//         // transform: translateX(-100%);
+//     }
+// }
+
+@-webkit-keyframes runClouds {
+    0% {
+        right: 0;
+        transform: translateX(0);
+    }
+    100% {
+        right: 40%;
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes runLeftToRight {
+    0% {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    100% {
+        left: 80%;
+        transform: translateX(100%);
+    }
+}
+
+@include keyframes(run) {
+    0% {
+        right: -270px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+@include keyframes(runLeftToRight) {
+    0% {
+        left: 0;
+        transform: translateX(0);
+    }
+
+    100% {
+        left: 80%;
+        transform: translateX(100%);
+    }
+}
+
+@include keyframes(runClouds) {
+    0% {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    100% {
+        right: 40%;
+        transform: translateX(-100%);
+    }
+}
+
+
+@include keyframes(runSingleCloud) {
+    0% {
+        right: -1100px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+//polonnaruwa 2 clouds
+@-webkit-keyframes runLeftToRightPolonnaruwaCloud1 {
+    0% {
+        left: -1180px;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+//polonnaruwa 2 clouds
+@-webkit-keyframes runRightToLeftPolonnaruwaCloud2 {
+    0% {
+        right: -1180px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+//gallery nuwaraeliya
+@include keyframes(runCloudsGallery) {
+    0% {
+        right: 0;
+        transform: translateX(80%);
+    }
+
+    100% {
+        right: 100%;
+        transform: translateX(0%);
+    }
+}
+
+//gallery nuwaraeliya
+@include keyframes(runBoatGallery) {
+    0% {
+        right: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        right: 100%;
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
